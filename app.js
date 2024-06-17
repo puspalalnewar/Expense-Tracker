@@ -42,8 +42,6 @@ btnAdd.addEventListener("click", ()=>{
     btnAdd.disabled = true;
     btnAdd.style.cursor = "no-drop";
 
-    
-
 });
 const fetchData = JSON.parse(localStorage.getItem("items"));
 console.log(fetchData);
