@@ -5,8 +5,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     margin-top: 5rem;
 }
 .container{
@@ -16,6 +16,7 @@ body{
     color: white;
     padding: 2rem;
     border-radius: 1rem;
+    margin-left: 15.5%;
 }
 h1{
     text-align: center;
@@ -82,5 +83,11 @@ h1{
     margin-top: 2rem;
     text-align: center;
     font-size: x-large;
+    font-weight: bold;
+}
+#logo{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: larger;
     font-weight: bold;
 }
