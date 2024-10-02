@@ -36,11 +36,7 @@ btnAdd.addEventListener("click", () => {
     btnAdd.style.cursor = "no-drop";
 });
 
-btnClear.addEventListener("click", () => {
-    localStorage.clear();
-    total.innerText = "00";
-    location.reload();
-});
+
 
 const fetchData = JSON.parse(localStorage.getItem("items"));
 console.log(fetchData);
@@ -57,6 +53,11 @@ if (fetchData === null) {
         container.appendChild(newRec);
     });
 }
+btnClear.addEventListener("click", () => {
+    localStorage.clear();
+    total.innerText = "00";
+    location.reload();
+});
 
 
 
