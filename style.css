@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 .container{
     background-color: black;
@@ -18,7 +17,6 @@ body{
 }
 h1{
     text-align: center;
-    margin-top: 1rem;
 }
 #item{
     width: 100%;
@@ -42,12 +40,12 @@ h1{
 #p1{
     font-size: x-large;
     font-weight: bold;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 #p2{
     font-size: x-large;
     font-weight: bold;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 #btn-add{
     height: 3rem;
@@ -58,6 +56,8 @@ h1{
     font-size: medium;
     margin-right: 1rem;
     cursor: pointer;
+    background-color: #34C759  ;
+    color: white;
 }#btn-clear{
     height: 3rem;
     border: none;
@@ -66,11 +66,12 @@ h1{
     margin-top: 2rem;
     font-size: medium;
     cursor: pointer;
+    background-color: #FF0000;
+    color: white;
 }
 .list-item{
-    height: 3.5rem;
-    background-color: #2e2c2c;
-    margin-top: 2rem;
+    background-color:#2F4F7F ;
+    margin-top: 1rem;
     font-size: larger;
     width: 100%;
     font-weight: bold;
@@ -78,7 +79,7 @@ h1{
     border-radius: 7px;
 }
 #total{
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
     font-size: x-large;
     font-weight: bold;

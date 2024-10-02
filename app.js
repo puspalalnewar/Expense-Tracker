@@ -16,11 +16,14 @@ item.addEventListener("keyup", () => {
 });
 
 btnAdd.addEventListener("click", () => {
-
-    total.innerText = parseInt(total.innerText) + parseInt(amount.value) + "Rs";
+    if(amount.value.length === 0){
+        alert("Please Enter The Value Of Amount!!");
+        return;
+    }
+    total.innerText = parseInt(total.innerText) + parseInt(amount.value) + " ₹";
     let newRec = document.createElement("p");
     newRec.classList.add("list-item");
-    newRec.innerText = `${item.value} : ${amount.value} Rs`;
+    newRec.innerText = `${item.value} : ${amount.value} ₹`;
     const requestBody = {
         name: item.value,
         amount: amount.value,
@@ -45,11 +48,10 @@ if (fetchData === null) {
 
 } else {
     fetchData.forEach((e) => {
-
         total.innerText = `${e.rupees}`;
         let newRec = document.createElement("p");
         newRec.classList.add("list-item");
-        newRec.innerText = `${e.name} : ${e.amount} Rs`;
+        newRec.innerText = `${e.name} : ${e.amount} ₹`;
         container.appendChild(newRec);
     });
 }
@@ -58,8 +60,3 @@ btnClear.addEventListener("click", () => {
     total.innerText = "00";
     location.reload();
 });
-
-
-
-
-
